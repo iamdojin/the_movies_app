@@ -101,7 +101,7 @@ export const HomePage = () => {
 </div> */}
       <div className="text-2xl font-bold mb-4">Today's Special</div>
     
-     {!isLoading && movies.map((movie) =>(
+     {!isLoading && movies.map((movie: { id: any; }) =>(
         <MovieCard key={movie.id} movie={movie} />
         ))}
 
